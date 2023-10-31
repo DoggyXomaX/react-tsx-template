@@ -9,3 +9,12 @@ yarn
 ```shell
 yarn start
 ```
+
+## Linting
+```shell
+yarn run lint
+
+# or with fixes
+
+yarn run lint-fix
+```
