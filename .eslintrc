@@ -1,0 +1,46 @@
+{
+  "parser": "@typescript-eslint/parser",
+
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier"
+  ],
+
+  "rules": {
+    // Поддержка .tsx
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".jsx", ".tsx"] }
+    ],
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+
+    // Никаких export default
+    "import/prefer-default-export": "off",
+    "import/no-default-export": "error",
+    "import/exports-last": "error",
+    "import/group-exports": "error",
+
+    // Prettier
+    "prettier/prettier": "error",
+
+    // Максимальная ширина
+    "max-len": [
+      "error",
+      { "code": 100, "comments": 120 }
+    ]
+  },
+
+  "settings": {
+    "import/resolver": "webpack"
+  }
+}

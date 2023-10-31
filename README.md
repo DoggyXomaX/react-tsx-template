@@ -12,9 +12,8 @@ yarn start
 
 ## Linting
 ```shell
-yarn run lint
+yarn lint
 
 # or with fixes
-
-yarn run lint-fix
+yarn lint-fix
 ```
